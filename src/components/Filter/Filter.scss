@@ -1,0 +1,67 @@
+.two-blocks {
+    display: flex;
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+
+    .employees {
+        width: 50%;
+
+        .employees-title {
+            margin-left: 38.5%;
+        }
+        .employees-container {
+            max-width: 650px;
+            margin: 20px 0px 0px 20px;
+
+            .items {
+                -ms-overflow-style: none;
+                scrollbar-width: none;
+                display: flex;
+                flex-direction: row;
+                overflow-x: scroll;
+
+                .item {
+                    margin-left: 13px;
+                    min-width: 200px;
+                    background-color: rgb(260, 260, 260);
+
+                    .item-liter {
+                        margin-left: 47%;
+                    }
+
+                    
+                }
+            }
+
+            .items * > * {
+                margin-left: 20px;
+            }
+        }
+    }
+    .employees-birthday {
+        width: 50%;
+
+        .employees-birthday-title {
+            margin-left: 25%;
+        }
+        .employees-birthday-container {
+            border-left: 1px solid gray;
+            border-top: 1px solid gray;
+            width: 90%;
+            margin: 0 auto;
+            min-height: 500px;
+            background-color: rgb(260, 260, 260);
+            padding: 10px;
+        }
+    }
+}
+
+
+.active {
+    color: blue;
+}
+
+.not-active {
+    color: black;
+}
+
